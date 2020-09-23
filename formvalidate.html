@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   
+ <meta charset="UTF-8">
+ 
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Document</title>
+   
+ <script>
+    
+    function validate(){
+   
+         var username=document.getElementById('username').value;
+     
+       var password=document.getElementById('password').value;
+      
+      var email=document.getElementById('email').value;
+        
+    var phone=document.getElementById('pno').value;
+    var nameList=['prathi','ganavi','priyam','sathya'];
+         
+   if(username==username.length<=15)
+            {
+    
+            alert("Please enter the correct name");
+            }
+   
+        else if(password==" " || (!password.match(/[A-z][a-z]/)))
+            {
+    
+            alert("Please enter correct password")
+
+            }
+      
+      else if(email=="[A-Z0-9a-z._%+-]+@[A-Z0-9a-z.-]+\.[A-Z]" )
+            {
+            
+    alert("Please enter valid email");
+            }
+       
+     else if(phone==" " || (!phone.match(/\d{10}/)))
+            {
+        
+        alert("enter valid phone no");
+            }
+      
+            else if(nameList.indexOf(username) !== -1 )
+            {
+                alert('user name exists');
+                document.getElementById('name').focus();
+            }
+ else{
+            alert   ("successfully registered")+username;
+      
+      }
+    }
+       
+    
+    </script>
+</head>
+<body>
+  
+  <div style="text-align: center;margin-top: 150px; border:solid black; background-size: cover; padding: 100px;">
+ 
+       <form >
+       
+     Name:<input type="text" name="text" id="username" placeholder="Enter your name"/><br/>
+   
+      Password:<input type="password" name="passwd" id="password" placeholder="Enter your password"/><br/> 
+       
+     Email:<input type="email" name="email" id="email" placeholder="Enter email id"/><br/>
+     Phone no:<input type="number" name="pno" id="pno" placeholder="Enter your phone no"/><br/>   
+     
+      submit <input type="submit" name="submit" id="submit" onclick="validate()"/>
+       
+ </form>
+    </div>
+    
+</body>
+</html>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>document</title>
+ 
+    <script>
+        function electronic()
+        {
+            var name = document.getElementById("myList").value;
+            if(name == "Laptop")
+            {
+                var devicename = ['dell','hp','lenevo','acer'];
+                document.getElementById("display").innerHTML = devicename.join("<br>");
+            }
+            else if(name == "Mobile")
+            {
+                var devicename = ['Samsuang','apple', 'lenevo', 'Vivo'];
+                document.getElementById("display").innerHTML = devicename.join("<br>");
+            }
+            else if(name == "Tv")
+            {
+                var devicename = ['sony','lg','lenevo','whirlpool '];
+                document.getElementById("display").innerHTML = devicename.join("<br>");
+            }
+            
+           
+        }
+    </script>
+</head>
+<body>
+    <center>
+        
+        <div>
+    Devices <select name="list" id="myList" onchange="electronic()">
+        <option selected="" value="Default">--Select--</option>
+        <option value="Laptop">Laptop</option>
+        <option value="Mobile">Mobile</option>
+        <option value="Tv">Tv</option>
+       
+        
+    </select>
+    
+</div>
+<br>
+<div style="background-color:turquoise"> <span id="display"></span></div>
+</center>
+</body>
+</html>
