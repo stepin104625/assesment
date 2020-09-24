@@ -1,0 +1,21 @@
+[{
+    "name":"mayura",
+     "city":"Mysore", 
+     "type(veg/nonveg)":"Veg",
+     "cuisine":[
+         "Indian","Chinese","Italian"]
+     },
+     {
+        "name":"Amrutha",
+        "city":"bangalore", 
+        "type(veg/nonveg)":"Veg",
+        "cuisine":[
+            "Indian","nepalise","Italian"]
+     },
+     {
+        "name":"regalis",
+        "city":"Mysore", 
+        "type(veg/nonveg)":"nonveg",
+        "cuisine":[
+            "Indian","Italian"]
+     }]
